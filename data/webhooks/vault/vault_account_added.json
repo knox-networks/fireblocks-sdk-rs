@@ -1,0 +1,11 @@
+{
+  "type": "VAULT_ACCOUNT_ADDED",
+  "tenantId": "06f6ace9-6a03-467d-9c15-7c7b3d3d9755",
+  "timestamp": 1744727038616,
+  "data": {
+    "id": "24",
+    "assets": [],
+    "hiddenOnUI": false,
+    "name": "TestVault"
+  }
+}

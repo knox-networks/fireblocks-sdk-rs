@@ -21,7 +21,7 @@ pub struct Account {
   pub hidden_on_ui: bool,
   pub assets: Vec<AccountAsset>,
   pub customer_ref_id: Option<String>,
-  pub auto_fuel: bool,
+  pub auto_fuel: Option<bool>,
 }
 
 #[derive(Debug, Serialize, Clone)]

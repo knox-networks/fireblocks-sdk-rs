@@ -71,9 +71,12 @@ impl Client {
       destination: dest,
       amount: amount.to_string(),
       treat_as_gross_amount: None,
+      fee_level: None,
+      fee: None,
       gas_price: None,
       gas_limit: None,
-      fee_level: None,
+      network_fee: None,
+      priority_fee: None,
       note: note.unwrap_or("created by fireblocks-sdk for rust").to_string(),
     };
     self.create_transaction(args).await
@@ -103,9 +106,12 @@ impl Client {
       destination: DestinationTransferPeerPath { id: destination_vault.to_string(), ..Default::default() },
       amount: amount.to_string(),
       treat_as_gross_amount: None,
+      fee_level: None,
+      fee: None,
       gas_price: None,
       gas_limit: None,
-      fee_level: None,
+      network_fee: None,
+      priority_fee: None,
       note: note.unwrap_or("created by fireblocks-sdk for rust").to_string(),
     };
     self.create_transaction(args).await
@@ -144,9 +150,12 @@ impl Client {
       },
       amount: amount.to_string(),
       treat_as_gross_amount: None,
+      fee_level: None,
+      fee: None,
       gas_price: None,
       gas_limit: None,
-      fee_level: None,
+      network_fee: None,
+      priority_fee: None,
       note: note.unwrap_or("created by fireblocks-sdk for rust").to_string(),
     };
     self.create_transaction(args).await

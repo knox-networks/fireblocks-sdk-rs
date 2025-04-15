@@ -1,4 +1,3 @@
-use crate::assets::Asset;
 use crate::{impl_base_query_params, Epoch, QueryParams};
 use bigdecimal::BigDecimal;
 use chrono::{DateTime, Utc};
@@ -370,9 +369,15 @@ pub struct TransactionArguments {
   #[serde(rename = "treatAsGrossAmount", skip_serializing_if = "Option::is_none")]
   pub treat_as_gross_amount: Option<bool>,
   #[serde(skip_serializing_if = "Option::is_none")]
+  pub fee: Option<String>,
+  #[serde(skip_serializing_if = "Option::is_none")]
   pub gas_price: Option<String>,
   #[serde(skip_serializing_if = "Option::is_none")]
   pub gas_limit: Option<String>,
+  #[serde(skip_serializing_if = "Option::is_none")]
+  pub network_fee: Option<String>,
+  #[serde(skip_serializing_if = "Option::is_none")]
+  pub priority_fee: Option<String>,
   #[serde(rename = "feeLevel", skip_serializing_if = "Option::is_none")]
   pub fee_level: Option<String>,
   pub note: String,

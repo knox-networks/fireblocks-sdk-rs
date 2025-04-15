@@ -472,9 +472,12 @@ mod tests {
       destination: DestinationTransferPeerPath { id: "4".to_string(), ..Default::default() },
       amount: "0.001".to_string(),
       treat_as_gross_amount: None,
+      fee: None,
+      network_fee: None,
       gas_price: None,
       gas_limit: None,
       fee_level: None,
+      priority_fee: None,
       note: "created by fireblocks-sdk for rust".to_string(),
     };
 

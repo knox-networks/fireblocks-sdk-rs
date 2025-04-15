@@ -223,6 +223,7 @@ pub struct NetworkRecord {
 #[cfg(test)]
 mod test {
   use super::*;
+  use crate::types::Account;
   use std::fs;
 
   #[test]
@@ -236,5 +237,15 @@ mod test {
       let _webhook_data: TransactionDetails = serde_json::from_value(webhook_entry.data.clone())
         .expect(&format!("deserialization failed for path: {}", path.to_str().unwrap()));
     }
+  }
+
+  #[test]
+  fn test_vault_account_added_deserialization() {
+    let path = "./data/webhooks/vault/vault_account_added.json";
+    let data = fs::read_to_string(path).expect("Unable to read file");
+    let webhook_entry: WebhookEntry = serde_json::from_str(&data).unwrap();
+
+    let _webhook_data: Account =
+      serde_json::from_value(webhook_entry.data.clone()).expect(&format!("deserialization failed for path: {path}"));
   }
 }
