@@ -40,7 +40,7 @@ pub struct AddressContainer {
 #[serde(rename_all = "camelCase")]
 pub struct CreateAddressResponse {
   pub address: String,
-  pub legacy_address: String,
+  pub legacy_address: Option<String>,
   pub enterprise_address: Option<String>,
   #[serde(rename = "bip44AddressIndex")]
   pub bip44address_index: i32,
