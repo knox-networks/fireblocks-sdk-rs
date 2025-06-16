@@ -1,7 +1,7 @@
 use crate::api::Success;
 use crate::types::{
-  Account, ActivateAddressResponse, Address, AddressContainer, CreateAccount, CreateAddress, CreateAddressResponse,
-  PaginatedAssetWallet, VaultAccounts, VaultRenameResponse,
+  Account, AccountAsset, ActivateAddressResponse, Address, AddressContainer, CreateAccount, CreateAddress,
+  CreateAddressResponse, PaginatedAssetWallet, VaultAccounts, VaultRenameResponse,
 };
 use crate::Client;
 use crate::Result;
@@ -136,6 +136,16 @@ impl Client {
     V: AsRef<str>,
   {
     let u = self.build_url_params("vault/asset_wallets", Some(page))?.0;
+    self.get(u).await
+  }
+
+  #[tracing::instrument(level = "debug", skip(self))]
+  pub async fn asset_balance<T>(&self, asset_id: T) -> Result<AccountAsset>
+  where
+    T: AsRef<str> + Display + Debug,
+  {
+    let p = format!("vault/assets/{asset_id}");
+    let u = self.build_url(p)?.0;
     self.get(u).await
   }
 
