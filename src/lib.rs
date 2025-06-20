@@ -467,6 +467,7 @@ mod tests {
       asset_id: "SOL_TEST".to_string(),
       external_tx_id: None,
       customer_ref_id: None,
+      extra_parameters: None,
       operation: TransactionOperation::TRANSFER,
       source: TransferPeerPath { id: Some("0".to_string()), ..Default::default() },
       destination: DestinationTransferPeerPath { id: "4".to_string(), ..Default::default() },

@@ -66,6 +66,7 @@ impl Client {
       asset_id: format!("{asset_id}"),
       external_tx_id: None,
       customer_ref_id: None,
+      extra_parameters: None,
       operation: TransactionOperation::TRANSFER,
       source: TransferPeerPath { id: Some(source_vault.to_string()), ..Default::default() },
       destination: dest,
@@ -101,6 +102,7 @@ impl Client {
       asset_id: format!("{asset_id}"),
       external_tx_id: None,
       customer_ref_id: None,
+      extra_parameters: None,
       operation: TransactionOperation::TRANSFER,
       source: TransferPeerPath { id: Some(source_vault.to_string()), ..Default::default() },
       destination: DestinationTransferPeerPath { id: destination_vault.to_string(), ..Default::default() },
@@ -137,6 +139,7 @@ impl Client {
       asset_id: format!("{asset_id}"),
       external_tx_id: None,
       customer_ref_id: None,
+      extra_parameters: None,
       operation: TransactionOperation::TRANSFER,
       source: TransferPeerPath {
         id: Some(source_vault.to_string()),
