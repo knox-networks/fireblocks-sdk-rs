@@ -1,0 +1,132 @@
+{
+  "type": "TRANSACTION_STATUS_UPDATED",
+  "tenantId": "06f6ace9-6a03-467d-9c15-7c7b3d3d9755",
+  "timestamp": 1753460258580,
+  "data": {
+    "id": "f58897da-8c4e-446f-9455-afb8972d7834",
+    "createdAt": 1753459320636,
+    "lastUpdated": 1753459366897,
+    "assetId": "ETH_TEST5",
+    "source": {
+      "id": "47",
+      "type": "VAULT_ACCOUNT",
+      "name": "Jason",
+      "subType": ""
+    },
+    "destination": {
+      "id": "",
+      "type": "ONE_TIME_ADDRESS",
+      "name": "N/A",
+      "subType": ""
+    },
+    "amount": 0,
+    "networkFee": 0.000164017083096782,
+    "netAmount": 0,
+    "sourceAddress": "",
+    "destinationAddress": "0xbb0524426bc1d13dAB721DB69D86374FC6BaCDba",
+    "destinationAddressDescription": "",
+    "destinationTag": "",
+    "status": "COMPLETED",
+    "txHash": "0xb8f19ee1b7fccf797c6db202fde98a623505019977a87a3d1b6fd20b00957de3",
+    "subStatus": "CONFIRMED",
+    "signedBy": [],
+    "createdBy": "5203da85-94c9-4418-b019-7c8234d6f1ba",
+    "rejectedBy": "",
+    "amountUSD": 0,
+    "addressType": "",
+    "note": "",
+    "exchangeTxId": "",
+    "requestedAmount": 0,
+    "feeCurrency": "ETH_TEST5",
+    "operation": "CONTRACT_CALL",
+    "numOfConfirmations": 3,
+    "amountInfo": {
+      "amount": "0",
+      "requestedAmount": "0",
+      "netAmount": "0",
+      "amountUSD": "0.00"
+    },
+    "feeInfo": {
+      "networkFee": "0.000164017083096782",
+      "gasPrice": "1.003174859"
+    },
+    "blockInfo": {
+      "blockHeight": "8840374",
+      "blockHash": "0x229f6712d84dc2440950c6b5306f8054bc9257c5a29e155e4413f76ff1a4a6f9"
+    },
+    "networkRecords": [
+      {
+        "source": {
+          "id": "",
+          "type": "UNKNOWN",
+          "name": "External",
+          "subType": ""
+        },
+        "destination": {
+          "id": "47",
+          "type": "VAULT_ACCOUNT",
+          "name": "Jason",
+          "subType": ""
+        },
+        "txHash": "0xb8f19ee1b7fccf797c6db202fde98a623505019977a87a3d1b6fd20b00957de3",
+        "networkFee": "0.000164017083096782",
+        "assetId": "USYC_B75VRLGX_KFPM",
+        "netAmount": "0.009133",
+        "isDropped": false,
+        "type": "CONTRACT_CALL",
+        "destinationAddress": "0x1F35f9c94e2dc4334c7E5839B8932b97323A1355"
+      },
+      {
+        "source": {
+          "id": "47",
+          "type": "VAULT_ACCOUNT",
+          "name": "Jason",
+          "subType": ""
+        },
+        "destination": {
+          "id": "",
+          "type": "ONE_TIME_ADDRESS",
+          "name": "N/A",
+          "subType": ""
+        },
+        "txHash": "0xb8f19ee1b7fccf797c6db202fde98a623505019977a87a3d1b6fd20b00957de3",
+        "networkFee": "0.000164017083096782",
+        "assetId": "USDC_ETH_TEST5_AN74",
+        "netAmount": "0.01",
+        "isDropped": false,
+        "type": "CONTRACT_CALL",
+        "destinationAddress": "0xbb0524426bc1d13dAB721DB69D86374FC6BaCDba",
+        "amountUSD": "0.00999885"
+      },
+      {
+        "source": {
+          "id": "47",
+          "type": "VAULT_ACCOUNT",
+          "name": "Jason",
+          "subType": ""
+        },
+        "destination": {
+          "id": "",
+          "type": "ONE_TIME_ADDRESS",
+          "name": "N/A",
+          "subType": ""
+        },
+        "txHash": "0xb8f19ee1b7fccf797c6db202fde98a623505019977a87a3d1b6fd20b00957de3",
+        "networkFee": "0.000164017083096782",
+        "assetId": "ETH_TEST5",
+        "netAmount": "0.000000000000000000",
+        "isDropped": false,
+        "type": "CONTRACT_CALL",
+        "destinationAddress": "0xbb0524426bc1d13dAB721DB69D86374FC6BaCDba",
+        "amountUSD": "0"
+      }
+    ],
+    "signedMessages": [],
+    "extraParameters": {
+      "contractCallData": "0xd96a094a0000000000000000000000000000000000000000000000000000000000002710"
+    },
+    "assetType": "BASE_ASSET",
+    "gasLimit": "500000",
+    "nonce": "12"
+  }
+}
