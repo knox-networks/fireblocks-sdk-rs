@@ -52,7 +52,7 @@ pub struct TransactionDetails {
   #[serde(deserialize_with = "deserialize_option_empty_object", default)]
   pub fee_info: Option<FeeInfo>,
   pub fee_currency: String,
-  pub network_records: Option<Vec<serde_json::Value>>,
+  pub network_records: Option<Vec<NetworkRecord>>,
   #[serde(deserialize_with = "deserialize_epoch_time")]
   pub created_at: DateTime<Utc>,
   #[serde(deserialize_with = "deserialize_epoch_time")]
@@ -214,7 +214,7 @@ pub struct NetworkRecord {
   pub network_fee: Option<BigDecimal>,
   pub asset_id: String,
   pub net_amount: Option<BigDecimal>,
-  pub status: NetworkStatus,
+  pub is_dropped: Option<bool>,
   #[serde(rename = "type")]
   pub op_type: Option<String>,
   pub destination_address: Option<String>,
