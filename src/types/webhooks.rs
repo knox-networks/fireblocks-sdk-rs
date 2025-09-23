@@ -37,7 +37,7 @@ pub struct TransactionDetails {
   pub source: TransferPeerPath,
   #[serde(deserialize_with = "deserialize_option_empty_object", default)]
   pub source_address: Option<String>,
-  pub destination: TransferPeerPath,
+  pub destination: Option<TransferPeerPath>,
   #[serde(deserialize_with = "deserialize_option_empty_object", default)]
   pub destinations: Option<Vec<DestinationsResponse>>,
   #[serde(deserialize_with = "deserialize_option_empty_object", default)]
