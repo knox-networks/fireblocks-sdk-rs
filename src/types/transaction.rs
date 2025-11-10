@@ -44,6 +44,7 @@ pub enum TransactionOperation {
   SUPPLY_TO_COMPOUND,
   REDEEM_FROM_COMPOUND,
   TYPED_MESSAGE,
+  PROGRAM_CALL,
 }
 
 #[allow(non_camel_case_types)]
